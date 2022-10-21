@@ -34,18 +34,18 @@ session_start();
     {
 
 
-    if (($login == "Administrateur" && $password == "wvbt5qry88aijh3kgu22") ||  $login == "tbilhaut"  && $password == "Cavalier King Charles")
+    if (($login == "LOGIN1" && $password == "MDP1") ||  $login == "LOGIN2"  && $password == "MDP2")
     {
         header("location: acceuil.php");
         //Si réussite renvoyer vers -> acceuil.php
     }
 
-    elseif ($login != "Administrateur" || $login != "tbilhaut")
+    elseif ($login != "LOGIN1" || $login != "LOGIN2")
     {
         //Si echec renvoyer :
         echo "<p style='color:purple;'>L'Username entré est incorrect.</p>";
     }
-    elseif ($password != "wvbt5qry88aijh3kgu22" || $password != "Cavalier King Charles")
+    elseif ($password != "MDP1" || $password != "MDP2")
     {
         //Si echec renvoyer :
         echo "<p style='color:purple;'>Le password est incorrect.</p>";
